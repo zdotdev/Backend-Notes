@@ -90,3 +90,15 @@ app.get('/', (req, res) => { // the '/' and req res is default
 
 app.listen(3000)
 ```
+
+You can also make the user download a specific file:
+```js
+const express = require("express")
+const app = express()
+
+app.get('/', (req, res) => { // the '/' and req res is default
+	res.download("server.js")
+})
+
+app.listen(3000)
+```
