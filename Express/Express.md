@@ -54,3 +54,39 @@ app.get('/', (req, res) => { // the '/' and req res is default
 
 app.listen(3000)
 ```
+
+This is how to send status:
+```js
+const express = require("express")
+const app = express()
+
+app.get('/', (req, res) => { // the '/' and req res is default
+	res.sendStatus(500)
+})
+
+app.listen(3000)
+```
+
+Chaining the response:
+```js
+const express = require("express")
+const app = express()
+
+app.get('/', (req, res) => { // the '/' and req res is default
+	res.status(500).send(''Waddup)
+})
+
+app.listen(3000)
+```
+
+or sending a `.json` file with the status:
+```js
+const express = require("express")
+const app = express()
+
+app.get('/', (req, res) => { // the '/' and req res is default
+	res.status(500).json({error: "Error"})
+})
+
+app.listen(3000)
+```
