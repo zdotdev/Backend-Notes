@@ -26,3 +26,10 @@ Add the `nodemon` in script for easy access:
 }
 ```
 Don't forget to create the `server.js`
+
+# `server.js`
+In `server.js`, add the variables `express` and `app`
+```js
+const express = require("express") 
+const app = express()
+```
