@@ -43,3 +43,14 @@ app.listen(3000) // 3000 is a default port number
 ```
 This will thro 'Can't get /' so we have to declare that path and function.
 
+This is how to create the default path and the function
+```js
+const express = require("express")
+const app = express()
+
+app.get('/', (req, res) => { // the '/' and req res is default
+	res.send("Hello world")
+})
+
+app.listen(3000)
+```
