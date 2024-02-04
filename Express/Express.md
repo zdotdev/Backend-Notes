@@ -33,3 +33,13 @@ In `server.js`, add the variables `express` and `app`
 const express = require("express") 
 const app = express()
 ```
+
+Next is declare the use the `app.listen(3000)` to listen to the specific port number.
+```js
+const express = require("express")
+const app = express()
+
+app.listen(3000) // 3000 is a default port number
+```
+This will thro 'Can't get /' so we have to declare that path and function.
+
