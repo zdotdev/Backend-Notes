@@ -139,3 +139,11 @@ th{
 
 }
 ```
+
+Next is install all the libraries:
+```bash
+npm init -y
+npm i express
+npm i mysql
+```
+
